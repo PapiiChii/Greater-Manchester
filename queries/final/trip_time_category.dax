@@ -1,0 +1,12 @@
+Trip Time Category = 
+VAR StartHour = trips[Trip Hour]
+VAR DayType = RELATED(calendar[weekend_day_flag])
+RETURN
+IF(
+    DayType = "Weekday" && (
+        (StartHour >= 7 && StartHour <= 9) || 
+        (StartHour >= 16 && StartHour <= 18)
+    ),
+    "Peak (Rush Hour)",
+    "Off-Peak"
+)
