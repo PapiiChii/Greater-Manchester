@@ -42,7 +42,7 @@
 
 ## 📊 Interface Architecture Preview
 
-![Greater Manchester Analytics Executive Interface](visuals/dashboard_screenshot.jpg)
+![Greater Manchester Analytics Executive Interface](visuals/dashboard_screenshot)
 
 ---
 
