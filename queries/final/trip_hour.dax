@@ -1,0 +1,20 @@
+Trip Hour = 
+VAR CurrentTripID = trips[trip_id]
+VAR FirstStopSequence = 
+    MINX(
+        FILTER(
+            RELATEDTABLE(stop_times), 
+            stop_times[trip_id] = CurrentTripID
+        ),
+        stop_times[stop_sequence]
+    )
+VAR FirstStopHour = 
+    HOUR(
+        LOOKUPVALUE(
+            stop_times[arrival_time],
+            stop_times[trip_id], CurrentTripID,
+            stop_times[stop_sequence], FirstStopSequence
+        )
+    )
+RETURN
+    FirstStopHour
