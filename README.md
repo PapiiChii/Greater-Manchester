@@ -40,6 +40,10 @@
 
 **Outcome:** Built a production-ready, executive-level dashboard featuring high-scannability container designs (`#F3F5F8`), automated time intelligence segmentation, and an intuitive 24-hour network demand profile that isolated and corrected an undetected 16.54% metric classification shift across **58,320 total records**.
 
+## 📊 Interface Architecture Preview
+
+![Greater Manchester Analytics Executive Interface](visuals/dashboard_screenshot.jpg)
+
 ---
 
 ## 2. Objectives
